@@ -1,0 +1,16 @@
+@media(max-width: 768px){
+
+  
+    .navbar{
+        display: block;
+    }
+    .navbar ul li {
+        display: block;
+    }
+
+    .contact-section {
+        
+        margin: 0px;
+        padding: 0px;
+      }
+}

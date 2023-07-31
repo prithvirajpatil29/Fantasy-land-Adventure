@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBar {
+
+    height: 33px;
+    /* float: right; */
+    background-color: black;
+    /* justify-content: space-between; */
+    
+}
+
+.navBar>a {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.navBar>a:hover {
+    background-image: linear-gradient(#e11111,rgba(68, 218, 26, 0.867));
+} 
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: rgb(234, 211, 39);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.4s;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    padding-right: 30px;
+text-decoration: none;
+margin: 0 10px;
+color: black;
+
+}
+.navbar ul li a:hover{
+    color: red;
+}
+
+
+/* Home page */
+.animation>h1{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  text-shadow:  3px 3px 3px #000;
+  width: 40%;
+  background-color: rgba(255, 165, 0,0.33);
+  border-radius: 10px;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.animation>h1:hover{
+  padding:15px;
+  font-size: 42px;
+}
+
+
+.animation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  height: 570px;
+  background-size: 100%;
+  animation: animation_image 10s forwards;
+}
+
+@keyframes animation_image{
+  from{background: url(../media/homepage-bg-image.png) no-repeat bottom;
+  color: red}
+  to{background: url(../media/homepage-bg-image.png) no-repeat top;
+  color: green;}
+}
+
+
+/* Footer */
+.item8>iframe{
+  height: 200px;
+  width: 200px;
+  border: 2px dashed #000000;
+  /* border-radius: 100%; */
+ margin-top: 20px;
+ margin-right: 20px;
+ padding: 5px;
+ background-color: #fff;
+}
+.item8>div{
+  width: 140px;
+  
+}
+.item8>div>ul{
+  list-style: none;
+  
+}
+.item8{
+  background-color: #000;
+  align-items: self-start;
+  flex-flow: row wrap;
+  color: #fff;
+}
+.item8>div>h3{
+  border-bottom: 2px dashed #fff;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  color: rgb(234, 211, 39);
+  cursor: pointer;
+  
+}
+.item8>div>ul>li{
+  padding-top: 10px;
+  cursor: pointer;
+}
+.item8>div>ul>li i {
+  padding: 5px; 
+  
+}
+.container{
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Gallery style */
+.bodyback{
+  background-color: rgb(224, 255, 255);
+}
+
+
+.galimage1:hover {
+    
+        -webkit-transform:scale(1.25); 
+        transform:scale(1.25);
+    
+} 
+.galimage2:hover {
+  -webkit-transform:scale(1.25); 
+  transform:scale(1.25);
+} 
+.galimage3:hover {
+  -webkit-transform:scale(1.25); 
+  transform:scale(1.25);
+} 
+.galimage4:hover {
+  -webkit-transform:scale(1.25); 
+  transform:scale(1.25);
+} 
+.galimage5:hover {
+  -webkit-transform:scale(1.25); 
+  transform:scale(1.25);
+} 
+.galimage1:hover div {
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;
+
+} 
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text1,.text2, .text3, .text4, .text5{
+    color: #f6f6f9;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .text2{
+    color: #00000e;
+    
+  }
+
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* Contact.html */
+
+  .contactbg {
+    background-color: rgb(151, 206, 243);
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  .fname {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .fname::placeholder {
+    text-align: center;
+  }
+  .email {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .email::placeholder{
+    text-align: center;
+  }
+  .contact-section {
+    width: 500px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #d6aeae;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea {
+    resize: none;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .owl-animation {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .owl-animation img {
+    width: 150px;
+    animation: floatOwl 4s infinite;
+  }
+  
+  @keyframes floatOwl {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* explorer.html */
+  /* P12 */
+.animation3{
+  background: url(..//media/download.jpg) no-repeat center;
+  background-size: 100%;
+  animation: anii 10s infinite;
+}
+
+@keyframes anii{
+  from{background: url(../media/download.jpg) no-repeat top;
+  color: red;}
+  to{background: url(../media/forest.jpg) no-repeat bottom;
+      color: green;}
+}
+.commonAnimation{
+  padding: 150px;
+  border-radius: 5px;
+  margin: 30px;
+  height: 5%;
+}
+.Marathonww{
+  background-color: green;
+}
+.CssClass{
+  background-color: rgb(226, 187, 187);
+}
+
+.gallery{
+  margin: 30px;
+}
